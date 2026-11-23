@@ -1,0 +1,2 @@
+boundary_fraction,cohort_records,at_risk,non_risk,at_risk_percent,students_train,students_test,train_records,test_records,feature_count_total,static_feature_count,dynamic_feature_count
+0.5,24581,9196,15385,37.41100850250193,18151,4538,19685,4896,26,8,18

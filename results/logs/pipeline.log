@@ -1,0 +1,14 @@
+2026-09-27 23:32:18,933 | INFO | OULAD files missing; downloading the public UCI archive.
+2026-09-27 23:40:23,808 | INFO | Loaded OULAD tables.
+2026-09-27 23:48:47,320 | INFO | Pipeline completed in 515.5 seconds.
+2026-09-27 23:48:47,321 | INFO | Best test ROC-AUC model: XGBoost
+2026-11-23 11:10:30,948 | INFO | Loaded OULAD tables.
+2026-11-23 11:18:30,956 | INFO | Pipeline completed in 490.4 seconds.
+2026-11-23 11:18:30,956 | INFO | Best test ROC-AUC model: XGBoost
+2026-11-23 12:21:34,374 | INFO | Loaded OULAD tables.
+2026-11-23 12:25:32,330 | INFO | Loaded OULAD tables.
+2026-11-23 12:32:34,469 | INFO | Pipeline completed in 435.1 seconds.
+2026-11-23 12:32:34,469 | INFO | Best test ROC-AUC model: XGBoost
+2026-11-23 13:20:21,448 | INFO | Loaded OULAD tables.
+2026-11-23 13:27:42,602 | INFO | Pipeline completed in 464.1 seconds.
+2026-11-23 13:27:42,602 | INFO | Best test ROC-AUC model: XGBoost

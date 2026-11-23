@@ -1,0 +1,27 @@
+feature,group,source,calculation,temporal_rule,missing_handling
+gender,Static,studentInfo,Binary category (M/F),Baseline,None (complete)
+region,Static,studentInfo,Categorical region,Baseline,None (complete)
+highest_education,Static,studentInfo,Ordinal education level,Baseline,None (complete)
+imd_band,Static,studentInfo,Index of Multiple Deprivation band,Baseline,Imputed / Categorical
+age_band,Static,studentInfo,Categorical age group,Baseline,None (complete)
+num_of_prev_attempts,Static,studentInfo,Integer count of previous attempts,Baseline,None (complete)
+studied_credits,Static,studentInfo,Integer credit value,Baseline,None (complete)
+disability,Static,studentInfo,Binary indicator (Y/N),Baseline,None (complete)
+total_clicks,Dynamic (Behavioural),vle & studentVle,Sum of sum_click,Bounded by date <= cutoff_day,Imputed as 0
+active_days,Dynamic (Behavioural),studentVle,Count of unique active days,Bounded by date <= cutoff_day,Imputed as 0
+unique_sites,Dynamic (Behavioural),studentVle & vle,Count of unique id_site accessed,Bounded by date <= cutoff_day,Imputed as 0
+active_weeks,Dynamic (Behavioural),studentVle,Ceil((max_date + 1) / 7),Bounded by date <= cutoff_day,Imputed as 0
+mean_daily_clicks,Dynamic (Behavioural),studentVle,Mean clicks per interaction day,Bounded by date <= cutoff_day,Imputed as 0
+max_daily_clicks,Dynamic (Behavioural),studentVle,Maximum clicks on any single day,Bounded by date <= cutoff_day,Imputed as 0
+unique_activity_types,Dynamic (Behavioural),studentVle & vle,Count of unique activity_type,Bounded by date <= cutoff_day,Imputed as 0
+clicks_per_active_day,Dynamic (Behavioural),studentVle,total_clicks / active_days,Bounded by date <= cutoff_day,Imputed as 0
+active_day_ratio,Dynamic (Behavioural),studentVle,active_days / cutoff_day,Bounded by date <= cutoff_day,Imputed as 0
+max_daily_total_clicks,Dynamic (Behavioural),studentVle,Max daily aggregated sum_click,Bounded by date <= cutoff_day,Imputed as 0
+assessments_seen,Dynamic (Assessment),assessments,Count of unique assessments due <= cutoff_day,Assessment due date <= cutoff_day,Imputed as 0
+assessment_submissions,Dynamic (Assessment),studentAssessment,Count of submissions recorded <= cutoff_day,Submission date <= cutoff_day,Imputed as 0
+mean_assessment_score,Dynamic (Assessment),studentAssessment,Mean score across submissions,Submission recorded <= cutoff_day,Imputed via training median
+max_assessment_score,Dynamic (Assessment),studentAssessment,Maximum score across submissions,Submission recorded <= cutoff_day,Imputed via training median
+min_assessment_score,Dynamic (Assessment),studentAssessment,Minimum score across submissions,Submission recorded <= cutoff_day,Imputed via training median
+assessment_score_sd,Dynamic (Assessment),studentAssessment,Standard deviation of scores,Submission recorded <= cutoff_day,Imputed as 0
+mean_assessment_weight,Dynamic (Assessment),assessments & studentAssessment,Mean weight of assessments seen/submitted,Assessment due date <= cutoff_day,Imputed as 0
+on_time_submission_rate,Dynamic (Assessment),assessments & studentAssessment,Proportion where date_submitted <= assessment date,Assessment due date <= cutoff_day,Imputed as 0

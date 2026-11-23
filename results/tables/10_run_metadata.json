@@ -1,0 +1,13 @@
+{
+  "boundary_fraction": 0.5,
+  "seed": 20260927,
+  "best_model_by_test_roc_auc": "XGBoost",
+  "runtime_seconds": 464.1064275000099,
+  "data_source": "Open University Learning Analytics Dataset (OULAD), UCI dataset 349",
+  "notes": [
+    "All performance values were regenerated in this run.",
+    "No previous-paper metrics are embedded in the analysis code.",
+    "The final paper should report only values present in results/tables/.",
+    "The prediction boundary is 50% of presentation duration for each presentation."
+  ]
+}
