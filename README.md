@@ -1,9 +1,9 @@
-# Paper 2 — 50% Boundary Reproducible Analysis
+# 50% Boundary Reproducible Analysis
 
 ## Working title
-**Early Student Academic-Risk Prediction at the Halfway Mark: Evaluating Behavioural Feature Engineering and Machine Learning Models**
+**Behavioural and Assessment Feature Engineering for Early Student Academic-Risk Prediction: An Empirical Evaluation at the 50% Course-Presentation Boundary**
 
-This package is a fresh, reproducible implementation for the second OULAD study. It moves the prediction boundary from the first-quarter (25%) boundary to **50% of the course-presentation duration** and regenerates all performance results from the data.
+This package is a fresh, reproducible implementation for the  OULAD study. It moves the prediction boundary from the first-quarter (25%) boundary to **50% of the course-presentation duration** and regenerates all performance results from the data.
 
 The package is deliberately designed so that **no model-performance numbers from the earlier paper are hard-coded or copied**.
 
